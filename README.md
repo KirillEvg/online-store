@@ -1,2 +1,2 @@
-# [online-store](https://rolling-scopes-school.github.io/kirillevg-JSFE2022Q3/online-store/)
+# [online-store](https://rolling-scopes-school.github.io/KirillEvg/online-store/)
 
