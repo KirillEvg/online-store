@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>online store</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="document.location='index.html'"> <img  class = "logo_img" src="shopping.png" alt="logo"><p>ONLINE STORE</p></div>
+        <div class="total_money"><p class="cart_total">Cart total:</p>
+            <p class="money">$0.00</p></div>
+        <div class="basket">
+            <img onclick="document.location='basket.html'" class = "basket_img" src="basket.png" alt="basket">
+        <p class="count_basket">1</p>
+        </div>
+    </header>
+<main>
+    <aside class="product_filters">
+        <h3 class="main_text_aside">Product filters</h3>
+        <div class="buttons_filters">
+            <button class="reset">Reset Filters</button>
+            <button class="copy">Copy Search</button>
+        </div>
+        <div class="category">
+            <h3 class="name_category_div">Category</h3>
+            <div class="choice_category">
+            <p><input type="checkbox" name="a" > Бытовая техника<span class="count_position"> (4/4)</span></p>
+            <p><input type="checkbox" name="a" > Компьютеры<span class="count_position"> (3/3)</span></p>
+            <p><input type="checkbox" name="a" > Смартфоны, ТВ и электроника<span class="count_position"> (5/5)</span></p>
+            <p><input type="checkbox" name="a" > Товары для дома<span class="count_position"> (5/5)</span></p>
+            <p><input type="checkbox" name="a" > Авто и мото<span class="count_position"> (2/2)</span></p>
+        </div>
+        
+        </div>
+        <div class="brand">
+            <h3 class="name_brand_div">Brand</h3>
+            <div class="choice_brand">
+            <p><input type="checkbox" name="a" > Asus<span class="count_position"> (4/4)</span></p>
+            <p><input type="checkbox" name="a" > Lenovo<span class="count_position"> (3/3)</span></p>
+            <p><input type="checkbox" name="a" > Tefal<span class="count_position"> (5/5)</span></p>
+            <p><input type="checkbox" name="a" > HP<span class="count_position"> (5/5)</span></p>
+            <p><input type="checkbox" name="a" > Nokia<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > Huawei<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > Dell<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > Vento<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > Xiaomi<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > Apple<span class="count_position"> (2/2)</span></p>
+            <p><input type="checkbox" name="a" > MSI<span class="count_position"> (2/2)</span></p>
+        </div>
+        </div>
+        <div class="price">
+            <h3 class="name_price_div">Price</h3>
+            <div class="price_money">
+                <p class="one_money">$100</p>
+                <p class="two_money">$10000</p>
+            </div>
+            <div class="dual_slider">
+                <div class="cont">
+                    <div class="track"></div>
+                    <input  type ="range" min="0" max="100" value="40"
+                    class="one_slider">
+                    <input  type ="range" min="0" max="100" value="60"
+                    class="two_slider">
+                </div>
+        </div>
+        </div>
+        <div class="stock">
+            <h3 class="name_stock_div">Stock</h3>
+            <div class="stock_count">
+                <p class="one_stock">1</p>
+                <p class="two_stock">100</p>
+            </div>
+            <div class="dual_slider">
+                <div class="cont">
+                    <div class="track"></div>
+                    <input  type ="range" min="0" max="100" value="40"
+                    class="one_slider">
+                    <input  type ="range" min="0" max="100" value="60"
+                    class="two_slider">
+                </div>
+        </div>
+        </div>
+    </aside>
+    <section class="card">
+        <div class="card_header">
+            <select name="sort_list" id="sort_list">
+                <option>Цена по убыванию</option>
+                <option>Цена по возрастанию</option>
+                <option>По популярности</option>
+                <option>По врмени добавления</option>
+            </select>
+            <div class="count_card_page">
+            <p class="found">Found:</p> <p class="found_cont">6</p>
+        </div>
+        <input type="text" placeholder="Search product" class="search_product">
+        <div class="how_to_show">
+            <img  class = "one_square" src="2.png" alt="2">
+            <img  class = "two_square" src="1.png" alt="1">
+        </div>
+        </div>
+        <div class="cards">
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button class="details"  onclick="document.location='details.html'">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button  onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button  onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        <div class="card_items">
+            <div class="name_product"><h3 class="name_item_card">iPhone 13</h3></div>
+            <div class="image_card"> <img  class = "img_item" src="apple.jpg" alt="apple phone"></div>
+        <div class="button_card">
+            <button class="add_basket">Add basket</button>
+            <button onclick="document.location='details.html'" class="details">Details</button>
+        </div>
+        <div class="text_item">   
+            <p class="text_products">Категория:</p><p class="category_item"> Смартфоны, ТВ и электроника</p>
+            <p class="text_products">Цена:</p><p class="price_item"> $800</p>
+            <p class="text_products">Кол-во на складе:</p><p class="count_item"> 53 </p>
+            <p class="text_products">Рейтинг товара:</p><p class="rating_item"> 4.83 </p>
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="authors">
+        <ul>Authors:
+            <li><p class="athors" onclick = "document.location='https://github.com/chekan-liza'"> Елизавета Чекан</p></li>
+            <li><p class="athors" onclick="document.location='https://github.com/KirillEvg'"> Кирилл Комарышкин</p></li>
+           
+        </ul>
+    </div>
+    <div class="create">
+    <p class="years_create">online store - 2023</p>
+</div>
+    <div class="logo_curs"><img class="rs_img" onclick="document.location='https://rs.school/js/'" src="rs.png" alt="rs_logo"></div>
+</footer>
+</body>
+</html>

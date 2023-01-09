@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>online store</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="document.location='index.html'"> <img  class = "logo_img" src="shopping.png" alt="logo"><p>ONLINE STORE</p></div>
+        <div class="total_money"><p class="cart_total">Cart total:</p>
+            <p class="money">$0.00</p></div>
+        <div class="basket">
+            <img onclick="document.location='basket.html'" class = "basket_img" src="basket.png" alt="basket">
+        <p class="count_basket">1</p>
+        </div>
+    </header>
+    <main>
+        <section class="basket_cards">
+            <div class="info_of_basket">
+                <p class="product_in_cart">Products In Cart</p>
+                <p class="limit">Limit:<input  type ="number" min="0" max="100" value="1"
+                    class="limit_timer"></p>
+                    <div class="pagination">
+                    <p class="page_basket">Page:</p>
+                    <button class="step_back"> < </button>
+                    <p class="number_page">1</p>
+                    <button class="step_forward"> > </button>
+                </div>
+            </div>
+            <div class="details_info_item_of_basket_page">
+            <p class="number">1.</p>
+            <div class="img_product_basket"><img class="img_item_basket_page"src="apple.jpg" alt="phone"></div>
+            <div class="info_product_basket_page">
+                <h3 class="name_item_basket">IPhone 13</h3>
+                <p class="product_description_basket">SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...</p>
+            <div class="descrip">
+                <p class="rating_basket_item">Rating:<p class="number_rat_bas">4.88</p></p>
+            <p class="stock_item_basket">Stock: <p class="number_stock_bas">15</p></p>
+            <p class="price_of_the_product">$800</p>
+        </div>
+            </div>
+            <div class="count_product_of_basket_page">
+                <button class="add_product"> + </button>
+                    <p class="quantity_goods">1</p>
+                    <button class="remove_product"> - </button>
+            </div>
+        </div>
+        </section>
+        <aside class="summary">
+            <div class="name_summary">
+                <h3 class="sum">Summary</h3>
+            </div>
+            <div class="basket_count_ptoduct">
+                <p class="qqq">Product:</p>
+                <p class="cont_bask">1</p>
+            </div>
+            <div class="basket_total_ptoduct">
+                <p class="qqq">Total:</p>
+                <p class="cont_total">$800</p>
+            </div>
+            <p class="name_promo">Promocode</p>
+            <input type="text" class="write_promo" placeholder="Write promocode">
+            <p class="text_promo_test">Promo for test: 'RS', 'EPM'</p>
+            <button class="buy_now">BUY NOW</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="authors">
+            <ul>Authors:
+                <li><p class="athors" onclick = "document.location='https://github.com/chekan-liza'"> Елизавета Чекан</p></li>
+                <li><p class="athors" onclick="document.location='https://github.com/KirillEvg'"> Кирилл Комарышкин</p></li>
+               
+            </ul>
+        </div>
+        <div class="create">
+        <p class="years_create">online store - 2023</p>
+    </div>
+        <div class="logo_curs"><img class="rs_img" onclick="document.location='https://rs.school/js/'" src="rs.png" alt="rs_logo"></div>
+    </footer>
+</body>
+</html>
